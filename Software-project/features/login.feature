@@ -7,7 +7,7 @@ Scenario: login
 	And welcome 
 	
 Scenario:  Wrong login wrong password
-	Given the username is "Ab"
+	Given the username is "Abr"
 	And the password is "Ab133"
 	Then login failed 
 	And sorry

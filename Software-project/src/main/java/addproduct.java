@@ -11,7 +11,7 @@ public class addproduct
 	
 	public addproduct(Product p) {
 		this.p = p;
-		admin = new Admin("Haneen", "123");
+		admin = new Admin("Abrawajbeh", "Ab123");
 	}
 	
 	@Given("that the admin is logged in")

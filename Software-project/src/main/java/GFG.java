@@ -3,7 +3,7 @@ import java.util.logging.LogRecord;
 import java.util.logging.Logger;
 
 public class GFG {
-	 private GFG () {
+	 public GFG () {
 		    throw new IllegalStateException("No instances please!");
 		  }
 

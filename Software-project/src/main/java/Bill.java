@@ -103,7 +103,7 @@ for(int i=0 ;i<booking.size();i++) {
 			 }
 }
         
-GFG.printint(summ);
+GFG.print(summ);
 }
 
 	public static void setmin(Integer int2) {

@@ -24,7 +24,7 @@ List<Map<String, String>> meList ;
 public report()
 {
 this.user=user;
-admin = new Admin("Haneen", "123");
+admin = new Admin("Abrawajbeh", "Ab123");
 
 }
 

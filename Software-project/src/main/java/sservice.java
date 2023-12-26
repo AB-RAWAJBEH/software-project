@@ -22,8 +22,8 @@ public class sservice
 	{
 		this.service = new Service();
 		this.user = client;
-		this.admin = new Admin("test","123");
-		admin.login("Haneen","123");
+		admin = new Admin("Abrawajbeh", "Ab123");
+		admin.login("Abrawajbeh","Ab123");
 	}
 	
 	@Given("user is login")

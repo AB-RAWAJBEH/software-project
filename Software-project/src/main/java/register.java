@@ -24,13 +24,13 @@ public class register{
 	@Given("that admin login")
 	public void that_admin_login() {
 	    // Write code here that turns the phrase above into concrete actions
-		admin.login("amnaOth","am123");
+		admin.login("Abrawajbeh","Ab123");
 	}
 
 	@Given("there is a user with name {string}, username {string}, password {string}, phone {string}, and city {string}")
 	public void thereis_a_user_with_name_username_password_phone_and_city(String string, String string2, String string3, String string4, String string5) {
 	    // Write code here that turns the phrase above into concrete actions
-		user.set("Razan samaneh", "razansam", "razansam", "0569071035", "Nablus");
+		user.set("Abeer Rawajbeh ", "Abrawajbeh", "AB123", "1234", "Nablus");
 	}
 
 	@When("the Admin registers the user")
@@ -57,13 +57,13 @@ public class register{
 	@Given("there is a user with  name {string}, username {string}, password {string}, phone {string}, and city {string}")
 	public void there_is_a_user_with_name_username_password_phone_and_city(String string, String string2, String string3, String string4, String string5) {
 	    // Write code here that turns the phrase above into concrete actions
-		user.set("Razan samaneh", "razansam", "razansam", "0569071035", "Nablus");
+		user.set("Abeer Rawajbeh ", "Abrawajbeh", "AB123", "1234", "Nablus");
 	}
 
 	@Given("the user is already registered")
 	public void the_user_is_already_registered() {
 	    // Write code here that turns the phrase above into concrete actions
-		user.set("Razan samaneh", "razansam", "razansam", "0569071035", "Nablus");
+		user.set("Abeer Rawajbeh ", "Abrawajbeh", "AB123", "1234", "Nablus");
 		user.register(admin);
 
 		

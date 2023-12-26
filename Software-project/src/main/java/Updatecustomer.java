@@ -15,11 +15,11 @@ public class Updatecustomer{
 	
 	public Updatecustomer(Customer cust) {
 		this.cust = cust;
-		admin = new Admin("Haneen", "123");
+		admin = new Admin("Abrawajbeh", "Ab123");
 	}
 	@Given("admin is loggin")
 	public void admin_is_loggin() {
-		admin.login("Haneen","123");
+		admin.login("Abrawajbeh","Ab123");
 	}
 
 

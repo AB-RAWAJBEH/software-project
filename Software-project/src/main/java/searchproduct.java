@@ -20,7 +20,7 @@ public class searchproduct
 	
 	public searchproduct()
 	{
-		admin = new Admin("Haneen", "123");
+		admin = new Admin("Abrawajbeh", "Ab123");
 		meal = new Product();
 		result = new ArrayList<String>(); 
 	}	
@@ -66,7 +66,7 @@ public class searchproduct
 	@Given("the admin is not  logged in")
 	public void the_admin_is_not_logged_in()
 	{
-		admin.login("Haneen","123");
+		admin.login("Abrawajbeh","Ab123");
 	}
 
 

@@ -22,7 +22,7 @@ public class Updateproduct{
 	@Given("admin logged in")
 	public void admin_logged_in() {
 	    // Write code here that turns the phrase above into concrete actions
-		admin.login("amo","am444");
+		admin.login("Abrawajbeh","Ab123");
 	   // throw new io.cucumber.java.PendingException();
 	}
 

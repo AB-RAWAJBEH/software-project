@@ -7,14 +7,9 @@ on:
     types: [opened, synchronize, reopened]
 jobs:
   build:
+    name: Build and analyze
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout main branch from GitHub
-        uses: actions/checkout@v2
-        with:
-          path: software-project
-    
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis

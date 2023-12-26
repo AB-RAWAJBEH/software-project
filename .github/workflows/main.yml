@@ -7,7 +7,6 @@ jobs:
   build-on-oubuntu: 
   
     runs-on: ubuntu-latest
-
     steps:
       - name: step1-Checkout main branch from GitHub
         uses: actions/checkout@v2
@@ -41,5 +40,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-       run: mvn -B  jacoco:prepare-agent  verify  org.sonarsource.scanner.maven:sonar-maven-plugin:sonar jacoco:report  -Dsonar.projectKey=AB-RAWAJBEH_software-project
+        run: mvn -B  jacoco:prepare-agent  verify  org.sonarsource.scanner.maven:sonar-maven-plugin:sonar jacoco:report  -Dsonar.projectKey=AB-RAWAJBEH_software-project
        

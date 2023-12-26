@@ -1,0 +1,8 @@
+name: GitHub Actions Maven Build Example 
+
+on:
+  push:
+      branches: [master]
+jobs:
+
+   build-on-ubuntu:

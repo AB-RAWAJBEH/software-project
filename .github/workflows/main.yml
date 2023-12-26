@@ -25,4 +25,16 @@ jobs:
            
          - name: Step4 - Run test cases
            run: mvn --batch-mode -Dmaven.test.failure.ignore=true test
-      
+      name: SonarCloud 
+      on:
+       push:
+         branches:
+          -master
+       pull_request:
+         types: [opened,synchronize,reopened]
+      jobs:
+        build:
+          name: Build and analyze 
+          runs-on: ubuntu-latest
+        
+        

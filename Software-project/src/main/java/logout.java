@@ -9,11 +9,11 @@ public class logout {
 	Admin admin;
 	public logout ()
 	{
-		admin = new Admin("hadeel","111");
+		admin = new Admin("Abrawajbeh", "Ab123");
 	}
 	@Given("that the admin is loged in")
 	public void that_the_admin_is_loged_in() {
-		admin.login("Abeer","111");
+		admin.login("Abrawajbeh","Ab123");
 		}
 
 @When("the admin logs out")

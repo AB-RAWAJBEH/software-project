@@ -14,12 +14,12 @@ public class deletecustomer{
 	
 	public deletecustomer(Customer comp) {
 		this.comp = comp;
-		admin = new Admin("Haneen", "123");
+		admin = new Admin("Abrawajbeh", "Ab123");
 	}
 	
 	@Given("admin is loginn")
 	public void admin_is_loginn() {
-		admin.login("Haneen","123");
+		admin = new Admin("Abrawajbeh", "Ab123");
 	}
 
 	@Given("i want to delete customer with name={string},phone={string},id={string},and city={string}")

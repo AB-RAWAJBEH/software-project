@@ -16,8 +16,8 @@ public class register{
 	public register(Client client)
 	{
 		this.user = client;
-		this.admin = new Admin("amnaOth","am123");
-		admin.login("amnaOth","am123");
+		admin = new Admin("Abrawajbeh", "Ab123");
+		admin.login("Abrawajbeh","Ab123");
 	}
 
 	

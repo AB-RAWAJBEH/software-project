@@ -13,21 +13,21 @@ public class login {
 	
 	public login ()
 	{
-		admin = new Admin("Abr","Ab123");
+		admin = new Admin("Abrawajbeh", "Ab123");
 	}
 	
 
 	@Given("the username is {string}")
 	public void the_username_is(String string) {
 	    // Write code here that turns the phrase above into concrete actions
-		this.username="amnaOth";
+		this.username="Abr";
 	  
 	}
 
 	@Given("the password is {string}")
 	public void the_password_is(String string) {
 	    // Write code here that turns the phrase above into concrete actions
-		this.password="am123";
+		this.password="Ab123";
 	 
 	}
 

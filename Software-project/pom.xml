@@ -3,8 +3,8 @@
   <groupId>software</groupId>
   <artifactId>pro</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <properties>
-  <sonar.organization>softwaresecondspring</sonar.organization>
+ <properties>
+  <sonar.organization>ab-rawajbeh</sonar.organization>
   <sonar.host.url>https://sonarcloud.io</sonar.host.url>
 </properties>
   

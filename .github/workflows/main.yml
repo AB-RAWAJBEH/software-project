@@ -45,7 +45,29 @@ jobs:
              with: 
                java-version: 17
                distribution: 'zulu'# Alternative distribution option are available.
+
+            -name: Cache SonarCloud packages 
+             uses: actions/setup-java@v3
+             with: 
+               path: ~/.sonar/cache
+               key: ${{runner.os}}-sonar
+               restore-key:  ${{runner.os}}-sonar
                
+            -name: Cache Maven packages 
+               uses: actions/setup-java@v3
+               with: 
+                path: ~/.m2
+                key: ${{runner.os}}-m2-${{hashFiles('**/pom.xml')}}
+                restore-key:  ${{runner.os}}-m2
+            -name: Build and analyze
+              evn:
+               GITHUB_TOKEN: ${{secrets.SONAR_TOKEN}}# Needed to get PRinformation,if any
+               SONAR_TOKEN:  ${{secrets.SONAR_TOKEN}}
+              run: mvn -B verify org.sonarsource.scanner.maven:sonar--maven-plugin:sonar-Dsonar.projectKey=AB-RAWAJBEH_software-project      
+                
+
+            
+              
 
 
              
